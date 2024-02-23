@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Static/clock.png" type="image/x-icon">
+</head>
+<body>
+    <div id="pointer"></div>
+    <audio id="myAudio" src="Static/carlock.mp3"></audio>
+    <div id="outerDiv">
+        <div class="clockClass" id="clock">
+            <img class="clockImage" src="Static/clock.png" alt="someimage">
+        </div>
+        <div class="clockClass" id="clock1">
+            <img class="clockImage" src="Static/clock.png" alt="someimage">
+        </div>
+        <div id="displayTime">
+            <h2 class="ctime">Alarm Clock</h2>
+            <h3 id="currentTime">Current Time</h3>
+        </div>
+        
+        <div id="setAlarm">
+            <div id="time">
+                <select class="selectOptions"  id="hourInput">
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+                <select class="selectOptions"  id="minuteInput">
+                    <option value="minute" selected hidden>Minute</option>
+                </select>
+                <select class="selectOptions"  id="secondInput">
+                    <option value="seconds" selected hidden>Second</option>
+                </select>
+                
+                <select class="selectOptions" id="am_pm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+           
+
+            <button  id="setAlarmButton">Add Alarm</button>
+        </div>
+
+        
+       <div id="upcomingAlarm">
+        <h3>Upcoming Alarms</h3>
+        <div id="displayAlarmParent">
+            
+        </div>
+        
+       </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
